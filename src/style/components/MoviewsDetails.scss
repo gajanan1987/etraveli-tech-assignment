@@ -1,0 +1,82 @@
+.movie-details {
+  background-color: #ffffff;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+
+  &.nomovie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #333;
+  }
+
+  .poster-wrapper {
+    display: flex;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      max-width: 170px;
+      margin-right: 20px;
+    }
+  }
+
+  .director {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 12px;
+    text-align: left;
+    margin: 0;
+  }
+
+  .ratings {
+    margin-top: 20px;
+
+    .rating-wrapper {
+      display: flex;
+      margin-bottom: 15px;
+
+      p {
+        font-size: 16px;
+        margin: 0px 10px 0px 0px;
+      }
+
+      .star-ratings {}
+    }
+
+
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      column-gap: 10px;
+
+      li {
+        font-size: 14px;
+        color: #444;
+        border: 1px solid blue;
+        border-radius: 20px;
+        padding: 2px 12px;
+        color: blue;
+      }
+    }
+  }
+}
+
+.fallback-message {
+  font-size: 18px;
+  text-align: center;
+  color: #666;
+  margin-top: 20px;
+}

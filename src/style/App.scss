@@ -1,0 +1,40 @@
+@import "./reset/reset";
+.movies-app {
+ display: flex;
+ flex-direction: column;
+ min-height: 100vh;
+
+ .header{
+  background-color: #d1d1d1;
+  display: flex;
+  padding: 15px;
+ }
+
+ .movies-wrapper {
+  display: flex;
+  border-top: 1px solid #e4e1e1;
+  flex: 1;
+
+  @media (max-width: 1200px) {
+   flex-wrap: wrap;
+  }
+
+  .movie-list {
+   width: 50%;
+   flex: 1;
+
+   @media (max-width: 1200px) {
+    width: 100%;
+   }
+  }
+
+  .movie-details {
+   width: 50%;
+   flex: 1;
+
+   @media (max-width: 1200px) {
+    width: 100%;
+   }
+  }
+ }
+}
